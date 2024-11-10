@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <h1>Dynamic Resume Builder</h1>
+    <form id="resume-form">
+        <fieldset><fieldset>
+            <legend>Personal Information</legend>
+            <label for="username"><i class="fas fa-user"></i> Username:</label>
+            <input type="text" id="username" placeholder="Enter your username" required>
+        
+            <label for="name"><i class="fas fa-user"></i> Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+        
+            <label for="email"><i class="fas fa-envelope"></i> Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+        
+            <label for="phone"><i class="fas fa-phone"></i> Phone:</label>
+            <input type="tel" id="phone" placeholder="Enter your phone number" required>
+        
+            <label for="image-upload"><i class="fas fa-image"></i> Upload Picture:</label>
+            <input type="file" id="image-upload" accept="image/*" required>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Education</legend>
+            <label for="education"><i class="fas fa-graduation-cap"></i> Education:</label>
+            <textarea id="education" placeholder="Enter your education" rows="4" required></textarea>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Experience</legend>
+            <label for="experience"><i class="fas fa-briefcase"></i> Experience:</label>
+            <textarea id="experience" placeholder="Enter your work experience" rows="4" required></textarea>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Skills</legend>
+            <label for="skills"><i class="fas fa-cogs"></i> Skills:</label>
+            <textarea id="skills" placeholder="Enter your skills" rows="4" required></textarea>
+        </fieldset>
+        
+       
+        <form id="resume-form">
+            <!-- Form fields -->
+            <button type="submit"><b>Generate Resume</b></button>
+        </form>
+    
+        <div id="resume-display" style="display: none;">
+            <h2>Your Generated Resume</h2>
+            <div id="resume-card">
+                <img id="resume-picture" alt="Profile Picture" style="width: 100px; height: 100px; border-radius: 50%; margin-bottom: 10px;">
+                <div id="personal-info-section">
+                    <h3>Personal Information</h3>
+                    <p><b>Name:</b> <span id="display-name" contenteditable="true"></span></p>
+                    <p><b>Email:</b> <span id="display-email" contenteditable="true"></span></p>
+                    <p><b>Phone:</b> <span id="display-phone" contenteditable="true"></span></p>
+                </div>
+                <div id="education-section">
+                    <h3>Education</h3>
+                    <p id="display-education" contenteditable="true"></p>
+                </div>
+                <div id="experience-section">
+                    <h3>Experience</h3>
+                    <p id="display-experience" contenteditable="true"></p>
+                </div>
+                <div id="skills-section">
+                    <h3>Skills</h3>
+                    <p id="display-skills" contenteditable="true"></p>
+                </div>
+                <div id="buttons">
+                    <button id="share-link-btn">Copy Shareable Link</button>
+                    <button id="download-pdf-btn">Download as PDF</button>
+                    <button id="go-back-btn">Go Back to Form</button>
+                    <button id="edit-btn">Edit Resume</button>
+                </div>
+            </div>
+            <p id="share-link" style="display: none;"></p>
+        </div>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

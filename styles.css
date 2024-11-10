@@ -1,0 +1,102 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    background-color: rgb(200, 220, 240);
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+    background-color: rgb(240, 245, 255);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+fieldset {
+    border: 1px solid #9FC4F3;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+legend {
+    font-weight: bold;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #333;
+}
+
+input, textarea {
+    margin-top: 4px;
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #9FC4F3;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #9FC4F3;
+    color: #333;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #7FB0E3;
+}
+
+#resume-display {
+    max-width: 600px;
+    margin: 20px auto;  /* Add margin-top to separate it from the form */
+    background-color: rgb(240, 245, 255);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: none;  /* Initially hidden */
+}
+
+#resume-card {
+    text-align: center;
+}
+
+#resume-picture {
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #333;
+}
+
+p {
+    color: #333;
+}
+
+#buttons button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #9FC4F3;
+    color: #333;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#buttons button:hover {
+    background-color: #7FB0E3;
+}
